@@ -18,6 +18,7 @@ macm File.New\ Tab      key=<nop>
 macm File.Close         key=<nop>
 macmenu &File.New\ Tab     key=<nop>
 macmenu &File.Close        key=<nop>
+macmenu &File.New\ Tab key=<nop>
 
 " font
 set guifont=DejaVu\ Sans\ Mono:h12
@@ -26,7 +27,8 @@ set guifont=DejaVu\ Sans\ Mono:h12
 map <D-w> :bd<CR>
 imap <C-l> <space>=><space>
 
-" Peepopen
-macmenu &File.New\ Tab key=<nop>
-map <D-t> <Plug>PeepOpen
+" fullscreen
+set fuopt+=maxhorz
+macmenu &Edit.Find.Find\.\.\. key=<nop>
+map <D-CR> :set invfu<CR>
 

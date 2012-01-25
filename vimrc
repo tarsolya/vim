@@ -34,7 +34,7 @@ colorscheme solarized
 set wildmenu
 set formatoptions-=o
 set wildmode=list:longest,list:full
-set wildignore+=*.o,*.png,*.jpg,*.jpeg,*.gif,*.obj,.git,*.rbc,*.class,*public/system*,*/.svn,*/vendor/*,*/log/*,*/coverage/*,*/tmp/*,*/script/*,*/doc/*,*/node_modules/*,*/.sass-cache/*,.DS_Store
+set wildignore+=*.un~,*.o,*.png,*.jpg,*.jpeg,*.gif,*.obj,.git,*.rbc,*.class,*public/system*,*/.svn,*/vendor/*,*/log/*,*/coverage/*,*/tmp/*,*/script/*,*/doc/*,*/node_modules/*,*/.sass-cache/*,.DS_Store
 set laststatus=2
 
 " Directories
@@ -69,6 +69,8 @@ let macvim_hig_shift_movement = 1
 
 " CtrlP
 let g:ctrlp_map = '<d-t>'
+map <Leader>be :CtrlPBuffer<cr>
+map <Leader>bl :CtrlPMRU<cr>
 
 " Automatic stuff
 au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru} set ft=ruby

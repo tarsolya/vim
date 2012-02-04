@@ -1,6 +1,8 @@
 " Pathogen
 call pathogen#infect()
 
+" Runtimes
+runtime macros/matchit.vim
 
 " Main options
 set nocompatible

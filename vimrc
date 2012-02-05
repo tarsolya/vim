@@ -1,5 +1,6 @@
 " Pathogen
 call pathogen#infect()
+call pathogen#runtime_append_all_bundles()
 
 " Runtimes
 runtime macros/matchit.vim
@@ -9,7 +10,7 @@ set nocompatible
 syntax enable
 set encoding=utf-8
 set showcmd
-filetype indent plugin on
+filetype plugin indent on
 
 " Indent
 set nowrap

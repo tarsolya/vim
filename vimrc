@@ -1,6 +1,5 @@
 " Pathogen
 call pathogen#infect()
-call pathogen#runtime_append_all_bundles()
 
 " Runtimes
 runtime macros/matchit.vim

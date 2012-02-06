@@ -49,4 +49,9 @@
 [submodule "bundle/vim-texobj-rubyblock"]
 	path = bundle/vim-texobj-rubyblock
 	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
-
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = https://github.com/groenewege/vim-less
+[submodule "bundle/vim-css3-syntax"]
+	path = bundle/vim-css3-syntax
+	url = https://github.com/hail2u/vim-css3-syntax.git

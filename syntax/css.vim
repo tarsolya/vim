@@ -19,16 +19,16 @@ endif
 
 syn case ignore
 
-syn keyword cssTagName abbr acronym address applet area a b base
+syn keyword cssTagName abbr acronym address applet article aside area a b base
 syn keyword cssTagName basefont bdo big blockquote body br button
 syn keyword cssTagName caption center cite code col colgroup dd del
 syn keyword cssTagName dfn dir div dl dt em fieldset form frame
-syn keyword cssTagName frameset h1 h2 h3 h4 h5 h6 head hr html img i
+syn keyword cssTagName frameset h1 h2 h3 h4 h5 h6 head header hr html img i
 syn keyword cssTagName iframe img input ins isindex kbd label legend li
-syn keyword cssTagName link map menu meta noframes noscript ol optgroup
-syn keyword cssTagName option p param pre q s samp script select small
+syn keyword cssTagName link map menu meta nav noframes noscript ol optgroup
+syn keyword cssTagName option p param pre q s samp script section select small
 syn keyword cssTagName span strike strong style sub sup tbody td
-syn keyword cssTagName textarea tfoot th thead title tr tt ul u var
+syn keyword cssTagName textarea tfoot th thead tr tt ul u var
 syn match cssTagName "\<font\>"
 syn match cssTagName "\<table\>"
 syn match cssTagName "\*"
@@ -250,7 +250,7 @@ if version >= 508 || !exists("did_css_syn_inits")
   HiLink cssURL String
   HiLink cssFunctionName Function
   HiLink cssColor Constant
-  HiLink cssIdentifier Function
+  HiLink cssIdentifier Identifier
   HiLink cssInclude Include
   HiLink cssImportant Special
   HiLink cssBraces Function

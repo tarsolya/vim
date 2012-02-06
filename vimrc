@@ -74,6 +74,9 @@ let g:ctrlp_map = '<d-t>'
 map <Leader>be :CtrlPBuffer<cr>
 map <Leader>bl :CtrlPMRU<cr>
 
+" Completion
+let g:neocomplcache_enable_at_startup = 1
+
 " Automatic stuff
 au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru} set ft=ruby
 au BufNewFile,BufRead *.json set ft=javascript

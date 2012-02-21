@@ -73,3 +73,6 @@
 [submodule "bundle/vim-turbux"]
 	path = bundle/vim-turbux
 	url = https://github.com/jgdavey/vim-turbux.git
+[submodule "bundle/taskpaper.vim"]
+	path = bundle/taskpaper.vim
+	url = https://github.com/davidoc/taskpaper.vim.git

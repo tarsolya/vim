@@ -70,8 +70,8 @@ set pumheight=15
 let macvim_hig_shift_movement = 1
 
 " CtrlP
-let g:ctrlp_map = '<d-t>'
-map <Leader>t :CtrlP<cr>
+" let g:ctrlp_map = '<d-t>'
+" map <Leader>t :CtrlP<cr>
 map <Leader>be :CtrlPBuffer<cr>
 map <Leader>bl :CtrlPMRU<cr>
 

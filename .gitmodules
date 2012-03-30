@@ -63,7 +63,7 @@
 	url = https://github.com/hail2u/vim-css3-syntax.git
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
-	url = https://github.com:tarsolya/neocomplcache.git
+	url = https://github.com/tarsolya/neocomplcache.git
 [submodule "bundle/vim-ruby-refactoring"]
 	path = bundle/vim-ruby-refactoring
 	url = https://github.com/ecomba/vim-ruby-refactoring.git

@@ -4,6 +4,13 @@ call pathogen#infect()
 " Runtimes
 runtime macros/matchit.vim
 
+" terminal settings
+set mouse=a
+set ttymouse=xterm2
+set ttimeoutlen=20
+set notimeout
+set ttyfast
+
 " Main options
 set nocompatible
 syntax enable
@@ -72,7 +79,7 @@ let macvim_hig_shift_movement = 1
 " CtrlP
 " let g:ctrlp_map = '<d-t>'
 " map <Leader>t :CtrlP<cr>
-map <Leader>be :CtrlPBuffer<cr>
+"map <Leader>be :CtrlPBuffer<cr>
 map <Leader>bl :CtrlPMRU<cr>
 
 " Completion

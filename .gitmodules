@@ -25,9 +25,6 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "bundle/vim-autoclose"]
-	path = bundle/vim-autoclose
-	url = https://github.com/Townk/vim-autoclose
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
@@ -79,3 +76,6 @@
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = https://github.com/vim-scripts/bufexplorer.zip.git
+[submodule "bundle/vim-smartinput"]
+	path = bundle/vim-smartinput
+	url = https://github.com/kana/vim-smartinput

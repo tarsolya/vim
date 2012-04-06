@@ -21,7 +21,8 @@ macmenu &File.Close        key=<nop>
 macmenu &File.New\ Tab key=<nop>
 
 " font
-set guifont=DejaVu\ Sans\ Mono:h12
+"set guifont=DejaVu\ Sans\ Mono:h12
+set guifont=Inconsolata:h14
 
 " mappings
 map <D-w> :bd<CR>

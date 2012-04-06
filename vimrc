@@ -24,6 +24,8 @@ set softtabstop=2 tabstop=2 shiftwidth=2
 set expandtab
 set backspace=indent,eol,start
 set list listchars=tab:\ \ ,trail:·
+set autoindent
+set smartindent
 
 " Search
 set hlsearch
@@ -43,7 +45,7 @@ colorscheme solarized
 set wildmenu
 set formatoptions-=o
 set wildmode=list:longest,list:full
-set wildignore+=*.un~,*.o,*.png,*.jpg,*.jpeg,*.gif,*.obj,.git,*.rbc,*.class,*public/system*,*/.svn,*/vendor/*,*/log/*,*/coverage/*,*/tmp/*,*/script/*,*/doc/*,*/node_modules/*,*/.sass-cache/*,.DS_Store
+set wildignore+=*.un~,*.o,*.png,*.jpg,*.jpeg,*.gif,*.obj,.git,*.rbc,*.class,*public/system*,*vendor/ruby*,*/.svn,*/log/*,*/coverage/*,*/tmp/*,*/script/*,*/doc/*,*/node_modules/*,*/.sass-cache/*,.DS_Store
 set laststatus=2
 
 " Directories
@@ -73,6 +75,9 @@ imap <C-l> <Space>=><Space>
 set completeopt=menu,menuone,longest
 set pumheight=15
 
+" Clipboard hack
+set clipboard=unnamed
+
 " MacVIM
 let macvim_hig_shift_movement = 1
 
@@ -84,6 +89,11 @@ map <Leader>bl :CtrlPMRU<cr>
 
 " Completion
 let g:neocomplcache_enable_at_startup = 1
+
+" Ignore list for CTRLP
+let g:ctrlp_custom_ignore = {
+\ 'dir': 'vendor\/(?!assets)|vendor\/ruby'
+\ }
 
 " Automatic stuff
 au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru} set ft=ruby

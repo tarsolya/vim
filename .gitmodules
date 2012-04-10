@@ -94,6 +94,3 @@
 [submodule "bundle/vim-snipmate"]
 	path = bundle/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
-[submodule "bundle/jasmine.vim"]
-	path = bundle/jasmine.vim
-	url = https://github.com/claco/jasmine.vim.git

@@ -78,6 +78,12 @@ set pumheight=15
 " Clipboard hack
 set clipboard=unnamed
 
+" Backups and Swaps
+set nobackup
+set noswapfile
+set history=1000
+set undolevels=1000
+
 " MacVIM
 let macvim_hig_shift_movement = 1
 

@@ -19,6 +19,8 @@ macm File.Close         key=<nop>
 macmenu &File.New\ Tab     key=<nop>
 macmenu &File.Close        key=<nop>
 macmenu &File.New\ Tab key=<nop>
+macmenu &File.Print key=<nop>
+macmenu &File.New\ Window key=<nop>
 
 " font
 "set guifont=DejaVu\ Sans\ Mono:h12

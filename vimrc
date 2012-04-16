@@ -36,6 +36,7 @@ set smartcase
 " Navigation
 set relativenumber
 set ruler
+set cursorline
 
 " Colors
 set background=dark
@@ -71,10 +72,6 @@ set foldlevelstart=20
 " # => <C-l>
 imap <C-l> <Space>=><Space>
 
-" Completion
-set completeopt=menu,menuone,longest
-set pumheight=15
-
 " Clipboard hack
 set clipboard=unnamed
 
@@ -87,14 +84,41 @@ set undolevels=1000
 " MacVIM
 let macvim_hig_shift_movement = 1
 
-" CtrlP
-" let g:ctrlp_map = '<d-t>'
-" map <Leader>t :CtrlP<cr>
-"map <Leader>be :CtrlPBuffer<cr>
-map <Leader>bl :CtrlPMRU<cr>
+" Vimux
+let VimuxOrientation = "h"
+map <Leader>rp :PromptVimTmuxCommand<CR>
+map <Leader>rl :RunLastVimTmuxCommand<CR>
 
 " Completion
+set completeopt=menu,menuone,longest
+set pumheight=15
+
+let g:snips_trigger_key = '<D-s>'
 let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_camel_case_completion = 1
+let g:neocomplcache_enable_smart_case = 1
+let g:neocomplcache_enable_underbar_completion = 1
+let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_enable_auto_delimiter = 1
+let g:neocomplcache_snippets_dir = '~/.vim/bundle/snipmate-snippets/snippets/'
+
+" AutoComplPop like behavior.
+let g:neocomplcache_enable_auto_select = 0
+imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>"
+imap <C-k>     <Plug>(neocomplcache_snippets_expand)
+smap <C-k>     <Plug>(neocomplcache_snippets_expand)
+
+" For snippet_complete marker.
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
+
+" Yankring
+let g:yankring_replace_n_pkey = ''
+map <Leader>by :YRShow<CR>
+
+" CtrlP
+map <Leader>bl :CtrlPMRU<cr>
 
 " Ignore list for CTRLP
 let g:ctrlp_custom_ignore = {
@@ -107,4 +131,7 @@ au BufNewFile,BufRead *.json set ft=javascript
 
 " Remove trailing whitespace
 autocmd BufWritePre *.* :%s/\s\+$//e
+
+" Do not use fucked up escape waiting
+set noesckeys
 
